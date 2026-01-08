@@ -13,11 +13,17 @@ export default defineConfig({
       exclude: ['**/*.stories.tsx', '**/*.test.tsx']
     })
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+    css: true
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       formats: ['es'],
-      fileName: (format) => `index.${format}.js`
+      fileName: (format: string) => `index.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
@@ -29,4 +35,4 @@ export default defineConfig({
       }
     }
   }
-})
+} as any)
