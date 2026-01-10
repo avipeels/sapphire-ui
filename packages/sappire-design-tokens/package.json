@@ -1,1 +1,30 @@
-{"name": "@sapphire-ui/design-tokens", "version": "0.0.0", "type": "module", "main": "./dist/index.js", "types": "./dist/index.d.ts", "exports": {".": {"import": "./dist/index.js", "types": "./dist/index.d.ts"}, "./css": "./dist/index.css"}, "files": ["dist"], "scripts": {"build": "tsc -b && vite build", "lint": "eslint .", "test": "vitest", "generate-css": "node dist/generate-css.js"}, "devDependencies": {"@types/node": "^24.10.1", "typescript": "~5.9.3", "vite": "^7.2.4", "vite-plugin-dts": "^4.5.4", "vitest": "^4.0.16"}}
+{
+    "name": "@sapphire-ui/design-tokens",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./css": "./dist/index.css"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "test": "vitest",
+        "generate-css": "node dist/generate-css.js"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "typescript": "~5.9.3",
+        "vite": "^7.2.4",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.0.16"
+    }
+}
