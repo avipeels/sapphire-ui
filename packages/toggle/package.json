@@ -1,6 +1,7 @@
 {
   "name": "@sapphire-ui/toggle",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Toggle component for the Sapphire UI component library",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -23,11 +24,31 @@
     "build-storybook": "storybook build"
   },
     "dependencies": {
-    "@sapphire-ui/design-tokens": "^0.0.0",
+    "@sapphire-ui/design-tokens": "^1.0.0",
     "styled-components": "^6.1.0"
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "keywords": [
+    "toggle",
+    "switch",
+    "ui",
+    "component",
+    "react",
+    "sapphire-ui",
+    "styled-components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avipeels/sapphire-ui.git",
+    "directory": "packages/toggle"
+  },
+  "author": "Avinash Peelukhana",
+  "license": "MIT",
+  "homepage": "https://github.com/avipeels/sapphire-ui/tree/main/packages/toggle#readme",
+  "bugs": {
+    "url": "https://github.com/avipeels/sapphire-ui/issues"
   }
 }

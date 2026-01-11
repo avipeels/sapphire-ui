@@ -1,6 +1,7 @@
 {
     "name": "@sapphire-ui/design-tokens",
-    "version": "0.0.0",
+    "version": "1.0.0",
+    "description": "Design tokens for the Sapphire UI component library",
     "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -29,5 +30,24 @@
         "vite": "^7.2.4",
         "vite-plugin-dts": "^4.5.4",
         "vitest": "^4.0.16"
+    },
+    "keywords": [
+        "design-tokens",
+        "ui",
+        "design-system",
+        "sapphire-ui",
+        "css",
+        "styled-components"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avipeels/sapphire-ui.git",
+        "directory": "packages/sappire-design-tokens"
+    },
+    "author": "Avinash Peelukhana",
+    "license": "MIT",
+    "homepage": "https://github.com/avipeels/sapphire-ui/tree/main/packages/sappire-design-tokens#readme",
+    "bugs": {
+        "url": "https://github.com/avipeels/sapphire-ui/issues"
     }
 }

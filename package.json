@@ -7,12 +7,20 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspaces",
-    "build": "npm run build --workspaces",
-    "lint": "npm run lint --workspaces",
-    "test": "npm run test --workspaces",
-    "storybook": "npm run storybook --workspaces",
-    "build-storybook": "npm run build-storybook --workspaces"
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test",
+    "storybook": "yarn workspaces run storybook",
+    "build-storybook": "yarn workspaces run build-storybook",
+    "clean": "yarn workspaces run clean",
+    "prepublish": "yarn workspaces run build",
+    "publish:all": "yarn build && cd packages/sappire-design-tokens && npm publish && cd ../toggle && npm publish",
+    "publish:dry-run": "yarn build && cd packages/sappire-design-tokens && npm publish --dry-run && cd ../toggle && npm publish --dry-run",
+    "version:patch": "yarn version patch",
+    "version:minor": "yarn version minor",
+    "version:major": "yarn version major",
+    "version:bump": "yarn version --deferred"
   },
   "dependencies": {
     "react": "^19.2.0",
