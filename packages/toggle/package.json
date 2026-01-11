@@ -23,7 +23,8 @@
     "build-storybook": "storybook build"
   },
     "dependencies": {
-    "@sapphire-ui/design-tokens": "^0.0.0"
+    "@sapphire-ui/design-tokens": "^0.0.0",
+    "styled-components": "^6.1.0"
   },
   "peerDependencies": {
     "react": "^18.0.0",

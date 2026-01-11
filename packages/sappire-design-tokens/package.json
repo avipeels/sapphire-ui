@@ -9,7 +9,10 @@
             "import": "./dist/index.js",
             "types": "./dist/index.d.ts"
         },
-        "./css": "./dist/index.css"
+        "./css": "./dist/index.css",
+        "./styled": {
+            "types": "./dist/styled.d.ts"
+        }
     },
     "files": [
         "dist"
