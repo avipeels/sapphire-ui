@@ -6,7 +6,7 @@ import { StyledToggle, ToggleBall } from './Toggle.styles'
 export interface ToggleProps {
   checked?: boolean
   onChange?: (checked: boolean) => void
-  size?: 'md' | 'lg'
+  size?: string
   variant?: 'default'
 }
 
