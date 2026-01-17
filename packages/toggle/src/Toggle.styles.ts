@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "@sapphire-ui/design-tokens";
+import { getSizeMultiplier } from "./utils/sizeMapping";
 
 interface StyledToggleProps {
   size: keyof Theme['fontSizes'];
@@ -8,24 +9,13 @@ interface StyledToggleProps {
 
 export const StyledToggle = styled.button<StyledToggleProps>`
     ${({ theme, size }) => {
-        const sizeMap: Record<keyof Theme['fontSizes'], number> = {
-            xs: 3,
-            sm: 4,
-            md: 6,
-            lg: 8,
-            xl: 12,
-            '2xl': 16,
-            '3xl': 24,
-            '4xl': 32,
-            '5xl': 40,
-            '6xl': 48,
-        };
+        const sizeMultiplier = getSizeMultiplier(size);
         
         return `
         font-size: ${theme.fontSizes[size]};
         border: none; 
         height: ${theme.sizing[size]};
-        width: ${theme.sizing[String(sizeMap[size] * 2) as keyof typeof theme.sizing]};
+        width: ${theme.sizing[String(sizeMultiplier * 2) as keyof typeof theme.sizing]};
         border-radius: ${theme.borderRadius["2xl"]};
         background-color: ${theme.semanticColors.background.brandPrimary};
         position: relative;
@@ -33,7 +23,7 @@ export const StyledToggle = styled.button<StyledToggleProps>`
     }}
 `;
 
-export const ToggleBall = styled.div<StyledToggleProps>`
+export const Toggler = styled.div<StyledToggleProps>`
     ${({ theme, size, checked }) => `
         font-size: ${theme.fontSizes[size]};
         height: ${theme.sizing[size]};
@@ -42,6 +32,6 @@ export const ToggleBall = styled.div<StyledToggleProps>`
         background-color: white;
         position: absolute;
         top: 0;
-        ${checked ? `left: ${theme.spacing[size]}` : `right:  ${theme.spacing[size]}`}
+        ${checked ? `left: 0` : `right:  0`}
     `}
 `;

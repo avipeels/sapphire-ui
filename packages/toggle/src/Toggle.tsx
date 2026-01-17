@@ -1,7 +1,7 @@
 import React from 'react'
 import { theme } from '@sapphire-ui/design-tokens'
 import { ThemeProvider } from 'styled-components'
-import { StyledToggle, ToggleBall } from './Toggle.styles'
+import { StyledToggle, Toggler } from './Toggle.styles'
 
 export interface ToggleProps {
   checked?: boolean
@@ -29,7 +29,7 @@ export const Toggle: React.FC<ToggleProps> = ({
         size={size}
         onClick={handleToggle}
       >
-        <ToggleBall size={size} checked={isChecked}></ToggleBall>
+        <Toggler size={size} checked={isChecked}></Toggler>
       </StyledToggle>
     </ThemeProvider>
   )
