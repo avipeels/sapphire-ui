@@ -1,5 +1,5 @@
 import React from 'react'
-import { theme } from '@sapphire-ui/design-tokens'
+import { theme } from '@sapphireui/design-tokens'
 import { ThemeProvider } from 'styled-components'
 import { StyledToggle, Toggler } from './Toggle.styles'
 

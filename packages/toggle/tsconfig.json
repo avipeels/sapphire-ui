@@ -8,6 +8,9 @@
     "declarationMap": true,
     "sourceMap": true
   },
+  "references": [
+    { "path": "../sappire-design-tokens" }
+  ],
   "include": [
     "src/**/*"
   ],

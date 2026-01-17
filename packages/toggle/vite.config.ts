@@ -26,7 +26,7 @@ export default defineConfig({
       fileName: (format: string) => `index.${format}.js`
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@sapphireui/design-tokens'],
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',

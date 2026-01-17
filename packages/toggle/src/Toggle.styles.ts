@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Theme } from "@sapphire-ui/design-tokens";
+import { Theme } from "@sapphireui/design-tokens";
 import { getSizeMultiplier } from "./utils/sizeMapping";
 
 interface StyledToggleProps {

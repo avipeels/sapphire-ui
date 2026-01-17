@@ -1,17 +1,17 @@
-# @sapphire-ui/toggle
+# @sapphireui/toggle
 
 A customizable toggle component for React applications.
 
 ## Installation
 
 ```bash
-npm install @sapphire-ui/toggle
+npm install @sapphireui/toggle
 ```
 
 ## Usage
 
 ```tsx
-import { Toggle } from '@sapphire-ui/toggle'
+import { Toggle } from '@sapphireui/toggle'
 
 function App() {
   const [checked, setChecked] = useState(false)

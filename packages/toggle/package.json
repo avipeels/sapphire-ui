@@ -1,5 +1,5 @@
 {
-  "name": "@sapphire-ui/toggle",
+  "name": "@sapphireui/toggle",
   "version": "1.0.0",
   "description": "Toggle component for the Sapphire UI component library",
   "type": "module",
@@ -11,6 +11,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -21,10 +24,11 @@
     "preview": "vite preview",
     "test": "vitest",
     "storybook": "storybook dev -p 6007",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepack": "yarn build"
   },
     "dependencies": {
-    "@sapphire-ui/design-tokens": "^1.0.0",
+    "@sapphireui/design-tokens": "^1.0.0",
     "styled-components": "^6.1.0"
   },
   "peerDependencies": {

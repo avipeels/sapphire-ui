@@ -1,4 +1,4 @@
-import { Theme } from "@sapphire-ui/design-tokens";
+import { Theme } from "@sapphireui/design-tokens";
 
 export const getSizeMultiplier = (size: keyof Theme['fontSizes']): number => {
     const sizeMap: Record<keyof Theme['fontSizes'], number> = {

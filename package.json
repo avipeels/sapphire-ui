@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "workspaces": [
-    "packages/toggle"
+    "packages/*"
   ],
   "scripts": {
     "dev": "yarn workspaces run dev",
@@ -15,8 +15,8 @@
     "build-storybook": "yarn workspaces run build-storybook",
     "clean": "yarn workspaces run clean",
     "prepublish": "yarn workspaces run build",
-    "publish:all": "yarn build && cd packages/sappire-design-tokens && npm publish && cd ../toggle && npm publish",
-    "publish:dry-run": "yarn build && cd packages/sappire-design-tokens && npm publish --dry-run && cd ../toggle && npm publish --dry-run",
+    "publish:all": "yarn build && (cd packages/sappire-design-tokens && npm publish) && (cd packages/toggle && npm publish)",
+    "publish:dry-run": "yarn build && (cd packages/sappire-design-tokens && npm publish --dry-run) && (cd packages/toggle && npm publish --dry-run)",
     "version:patch": "yarn version patch",
     "version:minor": "yarn version minor",
     "version:major": "yarn version major",

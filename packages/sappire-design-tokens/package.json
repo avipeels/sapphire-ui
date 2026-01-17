@@ -1,5 +1,5 @@
 {
-    "name": "@sapphire-ui/design-tokens",
+    "name": "@sapphireui/design-tokens",
     "version": "1.0.0",
     "description": "Design tokens for the Sapphire UI component library",
     "type": "module",
@@ -15,6 +15,9 @@
             "types": "./dist/styled.d.ts"
         }
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "files": [
         "dist"
     ],
@@ -22,7 +25,8 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "test": "vitest",
-        "generate-css": "node dist/generate-css.js"
+        "generate-css": "node dist/generate-css.js",
+        "prepack": "yarn build"
     },
     "devDependencies": {
         "@types/node": "^24.10.1",
