@@ -6,7 +6,7 @@ import { StyledToggle, Toggler } from './Toggle.styles'
 export interface ToggleProps {
   checked?: boolean
   onChange?: (checked: boolean) => void
-  size?: string
+  size?: keyof typeof theme['fontSizes']
   variant?: 'default'
 }
 
